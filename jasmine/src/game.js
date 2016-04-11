@@ -7,9 +7,9 @@ function Game() {
 }
 
 Game.prototype.bowl = function(score) {
-  if (this.currentFrame === 10) {
-    this.frameTenBowl(score);
-  } else if (score === 10) {
+  // if (this.currentFrame === 10) {
+  //   this.frameTenBowl(score);
+  if (score === 10) {
     this.allPinsDown();
   } else if (this.midFrame === false) {
     this.midFrame = true;
@@ -39,9 +39,9 @@ Game.prototype.secondBowl = function(score) {
   this.endFrame();
 };
 
-Game.prototype.frameTenBowl = function(score) {
-
-}
+// Game.prototype.frameTenBowl = function(score) {
+//
+// }
 
 Game.prototype.addScore = function(score) {
   if (this.doubleScore > 0) {
